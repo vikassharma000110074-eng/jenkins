@@ -1,0 +1,175 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b1f3a;
+    padding: 20px 50px;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #00bfff;
+}
+
+/* Hero Section */
+.hero {
+    height: 400px;
+    background: linear-gradient(135deg, #0b1f3a, #087ca7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #00bfff;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #008cba;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f7fb;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-box h3 {
+    color: #087ca7;
+    margin-bottom: 15px;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #eaf3fa;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar ul li {
+        margin: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
